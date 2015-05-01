@@ -1,5 +1,5 @@
 # tagbars
-use html tags syntax for templates
+use html tags syntax for Meteor templates
 
 ```html
 <inclusiontemplate/>
