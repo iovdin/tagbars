@@ -1,10 +1,10 @@
 # tagbars
-use html tags syntax for Meteor templates
+use templates as html tags.
 
 ```html
 <inclusiontemplate/>
 
-<blocktemplate>
+<blocktemplate name="value">
 some content
 </blocktemplate>
 
@@ -22,7 +22,7 @@ becomes
 ```html
 {{>inclusiontemplate}}
 
-{{#blocktemplate}}
+{{#blocktemplate name='value'}}
 some content
 {{/blocktemplate}}
 

@@ -1,6 +1,6 @@
 Package.describe({
   name: 'iovdin:tagbars',
-  summary: "sidebars that feels like html tags",
+  summary: "use templates as html tags",
   version: '0.0.1',
   git: 'https://github.com/iovdin/tagbars.git',
   documentation: 'README.md'
