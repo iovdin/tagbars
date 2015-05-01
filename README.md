@@ -1,6 +1,8 @@
 # tagbars
 use templates as html tags.
 
+this plugin handles files with **.htm** extension
+
 ```html
 <inclusiontemplate/>
 
