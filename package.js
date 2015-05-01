@@ -8,7 +8,7 @@ Package.describe({
 
 Package.registerBuildPlugin({
   name: "compileTagbars",
-  use: ['minifiers', 'spacebars-compiler'],
+  use: ['minifiers@1.1.5', 'spacebars-compiler@1.0.6'],
   sources: [
     'plugin/compile-templates.js',
     'plugin/html-scanner.js'

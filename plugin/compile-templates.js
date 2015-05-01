@@ -27,9 +27,6 @@ var replaceUnkownTagsWithSpacebars = function(contents) {
     $("content").each(function(){
         $(this).replaceWith("{{> Template.contentBlock}}");
     });
-    $("hello1").each(function(){
-        console.log(this);
-    });
     $("*").each(function(){
         if(this.type != "tag") return;
         if(knownElementNames.indexOf(this.name) >= 0) return;
@@ -43,7 +40,6 @@ var replaceUnkownTagsWithSpacebars = function(contents) {
 
         }
     });
-    //console.log($.html());
     return $.html();
 }
 var doHTMLScanning = function (compileStep, htmlScanner) {
@@ -52,7 +48,6 @@ var doHTMLScanning = function (compileStep, htmlScanner) {
   var contents = compileStep.read().toString('utf8');
   try {
       contents = replaceUnkownTagsWithSpacebars(contents);
-      //console.log(contents);
       var results = htmlScanner.scan(contents, compileStep.inputPath);
   } catch (e) {
     if (e instanceof htmlScanner.ParseError) {
